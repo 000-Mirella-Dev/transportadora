@@ -7,10 +7,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    height: 80px;
+    min-height: 80px;
     background-color: #ffffff;
     box-sizing: border-box;
     z-index: 1000;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .Logo{
@@ -20,23 +22,18 @@
     margin: 0;
 }
 
-
 .navbtn{
     text-decoration: none;
     margin-left: 15px;
 }
 
-
 .navbtn button{
     background-color: rgb(0, 14, 141);
     color: white;
-
     border: none;
     border-radius: 8px;
-
     padding: 10px 18px;
     font-size: 16px;
-
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -45,3 +42,35 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 14, 141, 0.3);
 }
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        height: auto;
+    }
+
+    .Logo{
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbtn{
+        margin: 5px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbtn button{
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+

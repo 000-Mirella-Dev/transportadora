@@ -130,56 +130,63 @@
 .Button:hover {
   background-color: #36648b;
 }
-
 @media (max-width: 768px) {
-.form {
-  padding: 15px;
-  align-items: center;
-}
-
-  .input {
-  width: 100%;
-  max-width: 300px;
-  padding: 7px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-  font-size: 16px;
-}
+  .main{
+    padding-top: 200px;
+  }
   .titulo {
     font-size: 16px;
-    padding: 15px;
-    padding-top: 90px;
+    padding: 20px 15px;
+    text-align: center;
   }
-
   .loginPage {
     flex-direction: column;
-    padding: 20px;
     gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
   }
 
+  .Hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .motorista {
-    max-width: 450px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
   }
-
   .container_Login {
     width: 100%;
-    padding: 10px;
     max-width: 350px;
+    padding: 20px;
+    height: auto;
   }
 
   .login {
     font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 100%;
+    align-items: center;
   }
 
   .input {
-    font-size: 14px;
+    width: 100%;
+    max-width: 100%;
     padding: 12px;
+    font-size: 14px;
+    margin: 10px 0;
+    box-sizing: border-box;
   }
 
   .Button {
-    font-size: 14px;
+    width: 100%;
+    max-width: 100%;
     padding: 12px;
+    font-size: 14px;
+    margin-top: 15px;
   }
 }
