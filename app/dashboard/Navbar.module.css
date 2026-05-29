@@ -1,0 +1,44 @@
+.Navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    top: 0;
+    background-color: #1100ff;
+    justify-content: space-between;
+    padding: 15px 15px;
+    display: flex;
+}
+
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.LogoTexto{
+    font-size: 24px;
+    color: #f9f9ff;
+    font-weight: bold;
+}
+
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    transition: 0.3s ease;
+}
+
+.navlinks a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.navlinks :hover{
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+}
